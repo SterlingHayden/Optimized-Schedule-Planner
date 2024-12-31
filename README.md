@@ -11,6 +11,14 @@ To achieve this, we created data arrays containing essential information, includ
 - **Options for taking specific semesters off**
 
 Using Pyomo, we defined the objective function and established constraints, as follows:
+Course value mathematical formulation:
+
+$$f(\bf{X}, i) = \sum_{j=1}^b \sum_{k=1}^c \left[\bf{X}_{ijk}\left(j + \frac{1}{c - k + 2}\right)\right]$$
+
+Objective function mathematical formulation:
+
+$$\min_{\bf{X}, \bf{P}} \sum_{j=1}^b \sum_{k=1}^c \bf{P}_{jk}$$
+
 
 ### Key Insights from the Resulting Schedule:
 - **Semesters with 13-15 credit hours yield the most balanced and realistic schedules.**  
